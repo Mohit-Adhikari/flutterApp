@@ -10,8 +10,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Flutter Learn",
-      home: Container(
-          color: Colors.green
+      home: Material(
+        child: Container(
+            color: Colors.green,
+                child: Center(child: const Text("Hello World", style: TextStyle(fontSize: 40, color: Colors.blue))),
+        ),
       ),
     );
   }
