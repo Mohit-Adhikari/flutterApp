@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:firstapp/views/homeView.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,12 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Flutter Learn",
-      home: Material(
-        child: Container(
-            color: Colors.green,
-                child: Center(child: const Text("Hello World", style: TextStyle(fontSize: 40, color: Colors.blue))),
-        ),
-      ),
+      home:homeView(),
     );
   }
 }
